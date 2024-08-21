@@ -5,6 +5,7 @@
 
 
 .banner__wrapper {
+    padding: 145px 112px 40px 112px;
     position: relative;
     background-image: url("../img/banner.jpeg");
     background-position: center;
@@ -30,7 +31,7 @@
 }
 
 .banner__text-sale {
-    padding: 145px 0 0 112px;
+    
     font-weight: 700;
     font-size: 70px;
     line-height: calc(91 / 70);

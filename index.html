@@ -13,61 +13,60 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav>
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="" class="header__link-logo">
-                            <img class="header__logo" src="img/logo.svg" alt="логотип сайта">
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <button type="button" class="header__button-menu">
-                            Меню
-                        </button>
-                    </li>
-                    <li class="header__item">
-                        <div class="header__wrapper-input">
-                            <input type="text" class="header__serch" placeholder="Я ищу...">
-                            <button class="header__input-serch" type="button"></button>
-                        </div>
-                    </li>
-                    <li class="header__item header__item-login">
-                        <button class="header__item-button header__item-button_login-icon" type="button">Профиль</button> 
-                    </li>
-                    <li class="header__item header__item-cart">
-                        <button class="header__item-button header__item-button_cart-icon" type="button">Корзина</button> 
-                    </li>
-                    <li class="header__item header__item-favorites">
-                        <button class="header__item-button header__item-button_favorites-icon" type="button">Избранное</button> 
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__wrapper">
+                <a href="" class="header__link-logo">
+                    <img class="header__logo" src="img/logo.svg" alt="логотип сайта">
+                </a>
+                <button type="button" class="header__button-menu">
+                    Меню
+                </button>
+                <form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts"
+                    name="form">
+                    <input type="search" name="text" class="header__serch" placeholder="Я ищу...">
+                    <button class="header__button-serch" type="submit"></button>
+                </form>
+                <nav>
+                    <ul class="header__list">
+                        <li class="header__item header__item-login">
+                            <button class="header__item-button header__item-button_login-icon" type="button"><span class="header__item-text">Профиль<span></button> 
+                        </li>
+                        <li class="header__item header__item-cart">
+                            <button class="header__item-button header__item-button_cart-icon" type="button"><span class="header__item-text">Корзина</span></button> 
+                        </li>
+                        <li class="header__item header__item-favorites">
+                            <button class="header__item-button header__item-button_favorites-icon" type="button"><span class="header__item-text">Избранное</span></button> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="banner">
             <div class="container">
-                <div class="banner__wrapper">
-                    <p class="banner__text-sale">
-                        -50% на все ноутбуки
-                    </p>
-                    <p class="banner__text-promotion">
-                        До конца акции:
-                    </p>
-                    <ul class="banner__list">
-                        <li class="banner__item">3 
-                            <span class="banner__item-text">дня</span></li>
-                        <li class="banner__item">8
-                            <span class="banner__item-text">часов</span></li>
-                        </li>
-                        <li class="banner__item">43
-                            <span class="banner__item-text">минуты</span></li>
-                        </li>
-                    </ul>
-                </div>
+                <a href="#" class="banner__link">
+                    <div class="banner__wrapper">
+                        <p class="banner__text-sale">
+                            -50% на все ноутбуки
+                        </p>
+                        <p class="banner__text-promotion">
+                            До конца акции:
+                        </p>
+                        <ul class="banner__list">
+                            <li class="banner__item">3 
+                                <span class="banner__item-text">дня</span></li>
+                            <li class="banner__item">8
+                                <span class="banner__item-text">часов</span></li>
+                            </li>
+                            <li class="banner__item">43
+                                <span class="banner__item-text">минуты</span></li>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
             </div>
         </section>
-        <section class="assortment">
+        <!-- <section class="assortment">
             <div class="container">
                 <ul class="assortment__list">
                     <li class="assortment__item assortment__item-first">
@@ -78,17 +77,17 @@
                     </li>
                     <li class="assortment__item assortment__item-second">
                         <p class="assortment__text-second">Время скидок</p>
-                        <div class="assortment__text-wrapper">
-                            <p class="assortment__text-sale">-25%</p>
-                        </div>
                         <img src="img/img_2.jpg" alt="картинка ассортимента" class="assortment__img-second">
                     </li>
                     <li class="assortment__item assortment__item-third">
                         <div class="assortment__text-wrapper_third">
                             <p class="assortment__text-third">
-                                Вторая пара кроссовок 
-                                <p class="assortment__text-third_weight">в подарок!</p>
+                                Вторая пара кроссовок
+                            </p>    
+                            <p class="assortment__text-third_weight">
+                                в подарок!
                             </p>
+                            
                         </div>
                         <img src="img/img_3.jpg" alt="картинка ассортимента" class="assortment__img-third">
                     </li>
@@ -99,11 +98,10 @@
                         <img src="img/img_4.jpg" alt="картинка ассортимента" class="assortment__img-fourth">
                     </li>
                     <li class="assortment__item assortment__item-fifth">
-                        <p class="assortment__text-sale">-40%</p>
                         <img src="img/img_5.jpg" alt="картинка ассортимента" class="assortment__img-fifth">
                     </li>
                     <li class="assortment__item assortment__item-sixth">
-                        <p>Выгодно в декабре!</p>
+                        <p class="assortment__item-sixth_text-sale">Выгодно в декабре!</p>
                         <img src="img/img_6.jpg" alt="картинка ассортимента" class="assortment__img-sixth">
                     </li>
                     <li class="assortment__item assortment__item-seventh">
@@ -113,11 +111,9 @@
                         <img src="img/img_7.jpg" alt="картинка ассортимента" class="assortment__img-seventh">
                     </li>
                     <li class="assortment__item-8th">
-                        <p class="assortment__text-sale">-55%</p>
                         <img src="img/img_8.jpg" alt="картинка ассортимента" class="assortment__img-8th">
                     </li> 
                     <li class="assortment__item assortment__item-ninth">
-                        <p class="assortment__text-sale">-25%</p>
                         <p class="assortment__text-ninth">На бытовую химию</p>
                         <img src="img/img_9.jpg" alt="картинка ассортимента" class="assortment__img-ninth">
                     </li>
@@ -127,6 +123,6 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
 </body>
 </html>
