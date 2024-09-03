@@ -175,9 +175,7 @@
             "logo logo list"
             "menu form form";
     }
-    nav {
-        max-width: 221px;
-    }
+    
     .header__list {
         gap: 15px;
         
