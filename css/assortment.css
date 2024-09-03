@@ -69,13 +69,15 @@
 .assortment__text-first{
     font-size: 40px;
     line-height: calc(52 / 40);
+    white-space: nowrap;
 } 
 
-.assortment__img-first {
+.assortment__img{
     position: absolute; 
     inset: 0; 
     z-index: -1;
     border-radius: 20px;
+    width: 100%;
 }
 
 .assortment__item-second{
@@ -88,10 +90,10 @@
 
 .assortment__text-second {
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
-.assortment__item-second:after {
-    content: "-25%";
+.assortiment__text-sale_place-bottom {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -106,22 +108,14 @@
     padding: 24px 13px;
 }
 
-.assortment__img-second {
-    position: absolute; 
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
-}
-
 .assortment__item-third {
     position: relative;
-    /* height: 550px; */
     display: flex;
     align-items: end;
     padding:  20px 22px;
     font-size: 30px;
     line-height: calc(36 / 30);
-    /* background-color: rgba(0, 0, 0, 0.16); */
+    
 }
 
 .assortment__text-wrapper_third {
@@ -144,13 +138,6 @@
     text-transform: uppercase;
 }
 
-.assortment__img-third {
-    position: absolute; 
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
-}
-
 .assortment__item-fourth {
     position: relative;
     display: flex;
@@ -162,20 +149,6 @@
     
 }
 
-.assortment__img-fourth {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    
-}
-
 .assortment__item-fifth {
     position: relative;
     padding: 20px 20px;
@@ -184,15 +157,9 @@
     font-weight: 700;
 }
 
-.assortment__img-fifth {
-    position: absolute;
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
-}
 
-.assortment__item-fifth::after {
-    content: "-40%";
+
+.assortiment__text-sale_place-top{
     position: absolute;
     top: 20px;
     left: 20px;
@@ -217,15 +184,7 @@
     font-weight: 700;
 }
 
-.assortment__img-sixth {
-    position: absolute;
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
-}
-
-.assortment__item-sixth::after {
-    content: "-15%";
+.assortiment__text-sale_place-bottom {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -242,14 +201,6 @@
     padding: 24px 13px;
 }
 
-
-/* .assortment__item-sixth_text-sale {
-    max-width: 373px;
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: 700;
-} */
-
 .assortment__item-seventh {
     position: relative;
     display: flex;
@@ -259,13 +210,6 @@
     line-height: 1.2;
     font-weight: 700;
     
-}
-
-.assortment__img-seventh {
-    position: absolute;
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
 }
 
 .assortment__text-seventh {
@@ -286,15 +230,7 @@
     font-weight: 700;
 }
 
-.assortment__img-8th {
-    position: absolute;
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
-}
-
-.assortment__item-8th::after {
-    content: "-55%";
+.assortiment__text-sale_place-bottom {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -317,7 +253,6 @@
     flex-direction: column;
     justify-content: space-between;
     justify-content: flex-end;
-    /* height: 245px;   */
     padding: 147px 20px 20px 20px ;
     font-size: 30px;
     line-height: 1.3;
@@ -325,15 +260,7 @@
     
 }
 
-.assortment__img-ninth {
-    position: absolute;
-    inset: 0; 
-    z-index: -1;
-    border-radius: 20px;
-}
-
-.assortment__item-ninth::after {
-    content: "-25%";
+.assortiment__text-sale_place-top {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -352,11 +279,13 @@
     .assortment__item-tenth {
         position: relative;
     }
-    .assortment__img-tenth {
+    .assortment__img-8th {
         position: absolute;
         inset: 0; 
         z-index: -1;
         border-radius: 20px;
+        width: 100%;
+        object-position: 10% 10%;
     }
 
 
@@ -367,13 +296,13 @@
     }
 
 @media(max-width:1250px) {
-    /* .container{
-        max-width: 940px;
-    } */
+    .container{
+        max-width: 1310px;
+    }
     .assortment__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(7, 260px);
+        grid-template-rows: repeat(6, 260px);
         gap: 24px;
     }
 
@@ -397,12 +326,12 @@
         line-height: calc(32 / 24);
         white-space: nowrap;
     }
-    .assortment__item-second:after {
+    .assortiment__text-sale_place-bottom{
         bottom: 10px;
         right: 10px;
     }
 
-    .assortment__item-fifth::after {
+    .assortiment__text-sale_place-top {
         top: 10px;
         left: 10px;
     }
@@ -434,34 +363,21 @@
     .assortment__item-sixth {
         font-size: 30px;
         line-height: calc(39 / 30);
-        padding: 29px 20px;
-    }
-
-    .assortment__item-sixth::after {
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .assortment__item-8th::after {
-        bottom: 10px;
-        right: 10px;
+        padding: 29px 97px 29px 29px
     }
 
     .assortment__img-8th {
         width: 100%;
     }
 
-    .assortment__item-ninth::after {
-        top: 10px;
-        left: 10px;
-    }
+    
     .assortment__text-ninth {
         font-size: 20px;
         line-height: calc(26 / 20);
     }
 
     .assortment__item-ninth {
-        padding: 117px 5px 14px 5px;
+        padding: 117px 5px 14px 14px;
         justify-content: flex-end;
     }
 
@@ -532,15 +448,12 @@
     }
     .assortment__list {
         display: grid;
-        grid-template-columns: repeat(37, 1fr);
-        grid-template-rows: repeat(17, 60px);
+        grid-template-columns: repeat(36, 1fr);
+        grid-template-rows: repeat(13, 60px);
         gap: 13px;
     }
-    .assortment__item-ninth::after,
-    .assortment__item-second:after,
-    .assortment__item-fifth::after,
-    .assortment__item-sixth::after,
-    .assortment__item-8th::after {
+    .assortiment__text-sale_place-bottom,
+    .assortiment__text-sale_place-top {
         width: 50px;
         height: 50px;
         font-size: 16px;
@@ -550,9 +463,7 @@
         padding: 15px 25px 15px 5px;
         
     }
-    .assortment__img-ninth {
-        width: 100%;
-    } 
+    
     .assortment__text-second {
         line-height: 1.3;
         font-size: 16px;
@@ -638,14 +549,18 @@
     }
     .assortment__img-tenth {
         width: 100%;
-        object-position: right  ;
+        object-position: right ;
     }
     .assortment__img-8th {
         /* object-fit: cover; */
         object-position: 0% 10%;
     }
     .assortment__item-seventh {
-        padding: 243px 46px 46px 46px;
+        justify-content: center;
+    }
+    .assortment__text-ninth {
+        font-size: 16px;
+        line-height: calc(20 / 16);
     }
     
 }
@@ -669,13 +584,15 @@
         max-width: 347px;
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
 }
 
 
 @media(max-width:515px){
     .container {
-        max-width: 575px;
+        max-width: 547px;
+        padding: 0 16px;
     }
     .assortment__list {
         display: grid;
@@ -683,6 +600,15 @@
         grid-template-rows: repeat(9, 130px);
         gap: 20px;
     }
+    .assortiment__text-sale_place-top {
+        top: 5px;
+        left: 5px;
+    }
+    .assortiment__text-sale_place-botoom {
+        bottom: 5px;
+        right: 5px;
+    }
+
     .assortment__item-first {
         padding: 10px;
     }
@@ -763,38 +689,11 @@
         width: 100%;
     }
 
-    
-    .assortment__item-second:after {
-        bottom: 5px;
-        right: 5px;
-        
-    }
-
-    .assortment__item-fifth::after {
-        top: 5px;
-        left: 5px;
-        
-    }
-
-    .assortment__item-sixth::after {
-        bottom: 5px;
-        right: 5px;
-    }
-
-    .assortment__item-8th::after {
-        bottom: 5px;
-        right: 5px;
-    }
-
-    .assortment__item-ninth::after {
-        top: 5px;
-        left: 5px;
-        
-    }
     .assortment__item-seventh {
-        padding: 83px 15px 9px 15px;
+        padding: 9px 15px 9px 15px;
         
     }
+
     .assortment__text-seventh {
             font-size: 12px;
             line-height: 1.2;
@@ -805,8 +704,8 @@
         .assortment__text-seventh {
         padding: 7px 19px 9px;
         
+        }
     }
-}
     
     
 
