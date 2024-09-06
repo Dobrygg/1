@@ -224,7 +224,7 @@
     }
     .header__button-menu {
         font-size: 16px;
-        padding: 7px 21px 11px 24px;
+        padding: 7px 21px 11px 21px;
         border-radius: 6px;
     }
 
@@ -326,7 +326,7 @@
     }
     .header__button-menu {
         font-size: 12px;
-        padding: 4px 14px 7px 17px;
+        padding: 5px 14px 7px 15px;
         min-width: 79px;
         gap: 4px;
         border-radius: 4px;
