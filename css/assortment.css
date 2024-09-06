@@ -2,6 +2,11 @@
     padding: 15px 0 189px;
 }
 
+picture {
+    display: block;
+    
+    height: 100%;
+}
 
 .assortment__list {
     display: grid;
@@ -157,6 +162,9 @@
     font-weight: 700;
 }
 
+.assortment__img-fifth {
+    object-position: 40% 10%;
+}
 
 
 .assortiment__text-sale_place-top{
@@ -285,7 +293,7 @@
         z-index: -1;
         border-radius: 20px;
         width: 100%;
-        object-position: 10% 10%;
+        object-position: 33% 10%;
     }
 
 
@@ -363,7 +371,7 @@
     .assortment__item-sixth {
         font-size: 30px;
         line-height: calc(39 / 30);
-        padding: 29px 97px 29px 29px
+        padding: 29px 73px 29px 29px
     }
 
     .assortment__img-8th {
@@ -553,7 +561,7 @@
     }
     .assortment__img-8th {
         /* object-fit: cover; */
-        object-position: 0% 10%;
+        object-position: 41% 10%;
     }
     .assortment__item-seventh {
         justify-content: center;
