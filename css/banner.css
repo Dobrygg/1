@@ -1,6 +1,5 @@
 .banner {
-    padding: 45px 0 15px;
-
+    padding: 45px 0 30px;
 }
 
 
@@ -67,6 +66,13 @@
     line-height: calc(42 / 32);
 }
 
+@media(max-width:1370px) {
+    .banner {
+        padding: 30px 0 11px;
+
+    }
+}
+
 @media(max-width:1024px) {
 
     .banner {
@@ -108,11 +114,16 @@
     }
     
 }
+
+@media (max-width:800px) {
+    .banner {
+        padding: 25px 0 20px;
+    }
+
+}
+
 @media(max-width:768px) {
 
-    .banner {
-        padding: 28px 0 20px;
-    }
     .banner__wrapper {
         padding: 63px 80px 33px 80px;
         background-image: url("../img/banner_768px.jpg");
@@ -146,7 +157,7 @@
 @media(max-width:320px) {
 
     .banner {
-        padding: 21px 0 20px;
+        padding: 21px 0 10px;
     }
     .banner__wrapper {
         padding: 59px 29px 30px 29px;
