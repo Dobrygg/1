@@ -85,7 +85,7 @@
     line-height: 130%;
 }
 
-.header__item-button_svg-wrapper {
+.header__svg-wrapper {
     position: relative;
 }
 
@@ -201,7 +201,7 @@
         font-size: 12px;
         line-height: 1.3;
     }
-    .header__item-button_svg-icon {
+    .header__svg-icon {
         max-width: 30px;
         max-height: 30px;
     }
