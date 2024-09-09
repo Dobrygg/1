@@ -57,9 +57,11 @@
     top: 0;
     right: 0;
     display: block;
-    
     background-color: var(--primary-color-dark-blue);
     border-radius: 30px;
+}
+.header__serch-svg {
+    color: var(--primary-color-dark-white);
 }
 
 .header__serch {
