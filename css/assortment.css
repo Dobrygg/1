@@ -735,7 +735,30 @@ picture {
             border-radius: 6px;
     }
 }
-    @media (max-width:445px) {
+    @media (max-width:425px) { 
+        .assortment {
+            padding: 10px 0 60px;
+        }
+        .assortment__text-third {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+    
+        .assortment__text-third_weight {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.1;
+        } 
+        .assortment__text-wrapper_third {
+            padding: 9px 25px;
+            border-radius: 8px;
+        }
+    }
+
+
+    @media (max-width:360px) { 
         .assortment {
             padding: 10px 0 60px;
         }
@@ -747,10 +770,10 @@ picture {
         }
     
         .assortment__text-third_weight {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.1;
-        }
+        } 
         .assortment__text-wrapper_third {
             padding: 9px 25px;
             border-radius: 8px;
